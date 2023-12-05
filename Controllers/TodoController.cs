@@ -38,12 +38,12 @@ namespace TodoAPI.Controllers
         }
 
         // PUT api/<TodoController>/5
-        [HttpPut("{id}")]
+        [HttpPut]
         public async Task<ActionResult<bool>> Put(TodoModel todo)
         {
-            bool sucess = await _todoService.UpdateTodo(todo);
-            if (sucess) return Ok(sucess);
-            return BadRequest(sucess);
+            bool success = await _todoService.UpdateTodo(todo);
+            if (success) return Ok(success);
+            return BadRequest(success);
         }
 
         // DELETE api/<TodoController>/5
