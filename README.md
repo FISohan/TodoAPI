@@ -17,4 +17,4 @@
      - ```dotnet ef database update```
   7. To run this project:
      - ```dotnet watch run```
-> # Now You Ready to Run
+> # Now You Ready to Explore
