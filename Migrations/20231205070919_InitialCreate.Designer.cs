@@ -11,14 +11,14 @@ using TodoAPI.Data;
 namespace TodoAPI.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230920043601_init")]
-    partial class init
+    [Migration("20231205070919_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "7.0.11");
+            modelBuilder.HasAnnotation("ProductVersion", "8.0.0");
 
             modelBuilder.Entity("TodoAPI.Model.TodoModel", b =>
                 {
